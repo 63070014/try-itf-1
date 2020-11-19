@@ -11,7 +11,7 @@
 <body>
 <?php
 $conn = mysqli_init();
-mysqli_real_connect($conn, 'datakaka.mysql.database.azure.com', 'datakaka@datakaka', 'PuiFai2023', 'itf-lab', 3306);
+mysqli_real_connect($conn, 'datadata.mysql.database.azure.com', 'datadata@datadata', 'PuiFai2023', 'itf-lab', 3306);
 if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
@@ -43,7 +43,7 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
 </table>
-<a href="insert.html"><input type="submit" value="ADD" class="btn-default btn-sm"></a>
+<a href="insert.html" class="btn btn-success mb-3">Add+</a>
 <?php
 mysqli_close($conn);
 ?>
