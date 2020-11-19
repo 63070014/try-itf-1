@@ -4,15 +4,23 @@
 <head>
     <title>Edit</title>
     <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+  .w3-button {width:70x;}
+  </style>
 </head>
-
 <body>
-    <form action="edit.php" method="post" id="Comment">
-        name change:<br>
-        <input type="text" name="name" id="idName" placeholder="Enter Name"> <br> feel change:<br>
-        <textarea rows="10" cols="20" name="comment" id="idComment" placeholder="Enter your feel"></textarea><br>
-        <input type="submit" id="commentBtn">
-    </form>
+  <div class="container">
+  <form action = "edit.php" method = "post" id="CommentForm" >
+    <h3>ชื่อของคนที่จะแก้:</h3>
+    <input type="text" class="form-control" name = "name" id="idName" placeholder="Enter Name"> <br>
+    <h3>ความรู้สึกที่เปลี่ยนไป:</h3>
+    <textarea rows="10" cols="20" class="form-control" name = "comment" id="idComment" placeholder="Enter Comment"></textarea><br>  
+    <input type="submit" id="commentBtn" class="w3-button w3-blue-grey">
+  </form> 
+</div>
 </body>
 
 </html>
