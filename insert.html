@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Add</title>
+    <title>Add values</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -14,20 +14,20 @@
 <body>
 
     <div class="container">
-        <h2>Add</h2>
-    <form action="insert.php" method="post" id="CommentForm">
+        <h2>Add values</h2>
+        <form action="abc_insert.php" method="post" id="ABC"></form>
         <div class="form-group">
-            <label for="usr">Name:</label>
-            <input type="text"  class="form-control"  name = "name" id="idName" placeholder="Enter Name"> <br>
+            <label for="usr">A</label>
+            <input type="text" class="form-control" id="idA" name="A" id="ABC" placeholder="Enter Name"> <br>
         </div>
         <div class="form-group">
             <div class="form-group">
-                <label for="comment">Comment:</label>
-                <textarea class="form-control" rows="5" name = "comment" id="idComment" placeholder="Enter Comment"></textarea>
+                <label for="comment">B</label>
+                <input type="text" class="form-control" id="idB" name="B" id="ABC"placeholder="Enter Name"> <br>
             </div>
         </div>
         <input type="submit" id="commentBtn" class="btn btn-primary">
-        <a href="show.php" class="btn btn-danger">Cancel</a>
+        <a href="showexam.php" class="btn btn-danger">Cancel</a>
         </form>
     </div>
 
